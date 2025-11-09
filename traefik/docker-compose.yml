@@ -2,7 +2,7 @@ version: '3'
 
 services:
   traefik:
-    image: traefik:latest
+    image: docker.io/traefik:latest
     container_name: traefik
     restart: unless-stopped
     security_opt:
