@@ -19,10 +19,10 @@ services:
       # be sure to use the correct one depending on if you are using a token or key
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /var/run/docker.sock:/var/run/docker.sock:ro
-      - /${HOME}/traefik/data/traefik.yml:/traefik.yml:ro
-      - /${HOME}/traefik/data/acme.json:/acme.json
-      - /${HOME}/traefik/data/config.yml:/config.yml:ro
+      - /var/run/podman/podman.sock:/var/run/podman/podman.sock:ro
+      - /data/traefik.yml:/traefik.yml:ro
+      - /data/acme.json:/acme.json
+      # - /${HOME}/traefik/data/config.yml:/config.yml:ro
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.traefik.entrypoints=http"
