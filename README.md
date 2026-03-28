@@ -95,7 +95,7 @@
  ``` yaml
   environment:
   - CF_API_EMAIL= email of cloudflare 
-  - CF_DNS_API_TOKEN= API token from cloudflare with Zone.DNS permission
+  - CF_DNS_API_TOKEN= API token from cloudflare with Zone.DNS permission Makesure no Space after equalto
   # - CF_API_KEY=YOUR_API_KEY
   # be sure to use the correct one depending on if you are using a token or key
  ```
